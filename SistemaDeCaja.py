@@ -2,8 +2,8 @@
 usuarios = {}
 
 # Definir datos de prueba
-usuarios["Gustavo"] = 400
-usuarios["Carlos"] = 200
+usuarios["Gustavo"] = 400.00
+usuarios["Carlos"] = 200.00
 
 def registrar_usuarios():
     nombre = input("Introduce el nombre del usuario: ")
@@ -33,3 +33,7 @@ def retirar():
             usuarios[nombre] -= retiro
     else:
         print("Usuario no existente en el registro")
+
+print(usuarios)
+retirar()
+print(usuarios)
